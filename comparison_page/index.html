@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+            <meta charset="UTF-8">
+            <title>Comparison Page</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="with-container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="first" class="navbar-brand" href="../landing_page/index.html">Latitude</a>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../temperature_page/index.html">Max. Tempetature</a></li>
+                                <li><a href="../humidity_page/index.html">Humidity</a></li>
+                                <li><a href="../cloudiness_page/index.html">Cloudiness</a></li>
+                                <li><a href="../wind_speed_page/index.html">Wind Speed</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="../landing_page/index.html">Home</a></li>
+                            </ul>     
+                        </li>
+                        <li><a href="../comparison_page/index.html">Comparison</a></li>
+                        <li><a href="../data_page/index.html">Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row" id="second">
+                <div class="col-md-12">
+                    <div class="thumbnail" id="thumb">
+                        <h1 id="summary">Comparison: Latitude vs. X</h1>
+                        <hr>
+                        <p id="line1">Click any plot to get an in-depth analysis.</p>
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-center" id="temp1">vs. Max Temperature</p>
+                                    <a href="../temperature_page/index.html"><img class="img-responsive center-block" id="img1" src="../instructions/City_Latitude_vs._Maximum_Temperature.png" alt="temp" class="pull-left"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-center" id="hum1">vs. Humidity</p>
+                                    <a href="../humidity_page/index.html"><img class="img-responsive center-block" id="img1" src="../instructions/City_Latitude_vs._Humidity.png" alt="humidity" class="pull-left"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-center" id="cloud1">vs. Cloudiness</p>
+                                    <a href="../cloudiness_page/index.html"><img class="img-responsive center-block" id="img1" src="../instructions/City_Latitude_vs._Cloudiness.png" alt="cloud" class="pull-left"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-center" id="wind1">vs. Wind Speed</p>
+                                    <a href="../wind_speed_page/index.html"><img class="img-responsive center-block" id="img1" src="../instructions/City_Latitude_vs._Wind_Speed.png" alt="wind" class="pull-left"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

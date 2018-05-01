@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Analysis Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="with-container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="first" class="navbar-brand" href="../landing_page/index.html">Latitude</a>
+                </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../temperature_page/index.html">Max. Tempetature</a></li>
+                        <li><a href="../humidity_page/index.html">Humidity</a></li>
+                        <li><a href="../cloudiness_page/index.html">Cloudiness</a></li>
+                        <li><a href="../wind_speed_page/index.html">Wind Speed</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../landing_page/index.html">Home</a></li>
+                    </ul>     
+                    </li>
+                    <li><a href="../comparison_page/index.html">Comparison</a></li>
+                    <li><a href="../data_page/index.html">Data</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" id="second">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="thumbnail">
+                        <h2 id="summary">Summary: Latitude vs. X</h2>
+                        <hr>
+                        <img id="img1" src="../instructions/City_Latitude_vs._Maximum_Temperature.png" alt="temp" class="pull-left">
+                        <div class="caption">
+                            <br>
+                            <br>
+                            <br>
+                            <p>The purpose of this project is to analyze how weather changes as we get closer to equator. To accomplish this analysis, we first collected data from OpenWeatherMap API to assemble the dataset on over 500 random cities and one nearby city to compare.</p>
+                            <br>
+                            <br>
+                            <p>After assembling the dataset, we used Pandas, Matplotlib and Seaborn to plot various aspects of the weather vs. latitude. Factors we looked at included, temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <h4 id="weather">Weather Analysis: Visualizations</h4>
+                        <hr>
+                        <h5>Maximum Temperature</h5>
+                        <a href="../temperature_page/index.html"><img id="img2"src="../instructions/City_Latitude_vs._Maximum_Temperature.png" alt="temp"></a>
+                        <h5>Humidity</h5>
+                        <a href="../humidity_page/index.html"><img id="img2"src="../instructions/City_Latitude_vs._Humidity.png" alt="hum"></a>
+                        <h5>Cloudiness</h5>
+                        <a href="../cloudiness_page/index.html"><img id="img2"src="../instructions/City_Latitude_vs._Cloudiness.png" alt="cloud"></a>
+                        <h5>Wind Speed</h5>
+                        <a href="../wind_speed_page/index.html"><img id="img2"src="../instructions/City_Latitude_vs._Wind_Speed.png" alt="wind"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!--Footer-->
+        <!--Copyright-->
+        <div class="with-container-fluid">
+            <div id="empty_teal"></div>
+            <div class="footer-copyright py-3 text-center" id="foot">
+                © Copyright Coding Bootcamp 2018
+            </div>
+        </div>
+        <!--/.Copyright-->
+    <!--/.Footer-->
+
+    </body>
+
+
+</html>

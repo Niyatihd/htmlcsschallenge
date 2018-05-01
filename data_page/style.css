@@ -1,0 +1,44 @@
+#first {
+    background-color: rgb(97, 186, 189);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 90px;
+}
+
+a {
+    color: black;
+}
+
+#second {
+    margin-top: 40px;
+}
+#thumb {
+    padding: 50px;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+#data {
+    color:cadetblue;
+}
+
+#data_line1 {
+    font-size: 15px;
+    color: grey;
+}
+
+#temp1 ,#cloud1 {
+    color:cadetblue;
+    padding-bottom: 0px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+#hum1 ,#wind1 {
+    color:cadetblue;
+    padding-bottom: 0px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
